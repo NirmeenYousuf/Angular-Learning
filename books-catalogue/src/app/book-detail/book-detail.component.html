@@ -1,0 +1,31 @@
+<!--<div *ngIf="book">
+    <label>
+      Id : {{book.id}}
+    </label>
+    <label>
+        Title : 
+        <input [(ngModel)] = "book.title">
+    </label>
+    <label>
+        Author : 
+        <input [(ngModel)] = "book.author">
+    </label>
+  
+    <button (click) = "UpdateBook()">Update</button>
+  </div>
+-->
+  <div class="div-area" *ngIf="book">
+      <h1>Book Details</h1>
+      
+      <label>Id : {{book.id}}</label>
+      <br/>
+      <mat-form-field class="full-width">
+          <input matInput placeholder="Title" [(ngModel)] = "book.title">
+      </mat-form-field>
+      <br/>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Author" [(ngModel)] = "book.author">
+      </mat-form-field>
+      <br/>
+      <button (click) = "UpdateBook()" mat-raised-button color="primary">Update</button>
+  </div>

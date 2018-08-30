@@ -1,0 +1,39 @@
+<!--<div>
+  <label>
+    Id : 
+    <input [(ngModel)] = "id">
+  </label>
+  <label>
+      Title : 
+      <input [(ngModel)] = "title">
+  </label>
+  <label>
+      Author : 
+      <input [(ngModel)] = "author">
+  </label>
+
+  <button (click) = 'AddBook()'>Add</button>
+</div>-->
+
+<div class="spinner" *ngIf="display">
+  <mat-progress-spinner color="primary" mode="indeterminate">
+  </mat-progress-spinner>
+</div>
+
+<div class="div-area">
+<h1>Add New Book</h1>
+
+<mat-form-field class="full-width" >
+  <input matInput placeholder="Id" [(ngModel)] = "id" >
+</mat-form-field>
+<br/>
+<mat-form-field class="full-width" >
+  <input matInput placeholder="Title" [(ngModel)] = "title" >
+</mat-form-field>
+<br/>
+<mat-form-field class="full-width" >
+    <input matInput placeholder="Author" [(ngModel)] = "author" >
+</mat-form-field>
+<br/>
+<button (click) = 'AddBook()' mat-raised-button color="primary">Add</button>
+</div>

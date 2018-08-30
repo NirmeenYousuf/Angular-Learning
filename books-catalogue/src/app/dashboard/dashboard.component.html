@@ -1,0 +1,20 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Dashboard</span>
+    <!--<a routerLink = '/'><span>Logout</span></a>-->
+    <!--<a routerLink = '/'><mat-icon>account_circle</mat-icon></a>-->
+    <span class="spacer"></span>
+    <mat-icon class="icon" routerLink = '/'>account_circle</mat-icon>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<nav mat-tab-nav-bar>
+  <a mat-tab-link routerLink = '/dashboard/'>Top Books</a>
+  <a mat-tab-link routerLink = '/dashboard/books'>Books</a>
+ <!-- <a mat-tab-link routerLink = '/'>Logout</a>-->
+</nav>
+
+<router-outlet></router-outlet>
+
